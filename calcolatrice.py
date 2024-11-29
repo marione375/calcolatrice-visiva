@@ -4,11 +4,12 @@ import tkinter as tk
 #definisco le variabili
 Condizionale = 0
 SommaButt = 0
-Numero1 = 0
-Numero2 = 0
 SottrazioneButt = 0
 MoltiplicazioneButt = 0
 DivisioneButt = 0
+Numero1 = 0
+Numero2 = 0
+
 #impostazioni dello schermo
 
 screen = "-fullscreen"
@@ -30,37 +31,37 @@ etichetta.grid(row=0, column=0, sticky="W", padx=0, pady=0)
 def Somma():
     
     text=" + "
-    text_output=tk.Label(window, text=text, fg="#000000", font=("Arial", 16), SommaButt = SommaButt + 1 )
+    text_output=tk.Label(window, text=text, fg="#000000", font=("Arial", 20), SommaButt = SommaButt + 1 )
     text_output.grid(row=1, column=0, sticky="w")
 
 def Sottrazione():
     
     text=" - "
-    text_output=tk.Label(window, text=text, fg="#000000", font=("Arial", 16))
+    text_output=tk.Label(window, text=text, fg="#000000", font=("Arial", 20), SottrazioneButt = SottrazioneButt + 1 )
     text_output.grid(row=1, column=1, sticky="w")
 
 def Moltiplicazione():
     
     text=" * "
-    text_output=tk.Label(window, text=text, fg="#000000", font=("Arial", 16))
+    text_output=tk.Label(window, text=text, fg="#000000", font=("Arial", 20), MoltiplicazioneButt = MoltiplicazioneButt + 1 )
     text_output.grid(row=1, column=2, sticky="w")
 
 def Divisione ():
     
     text=" / "
-    text_output=tk.Label(window, text=text, fg="#000000", font=("Arial", 16))
+    text_output=tk.Label(window, text=text, fg="#000000", font=("Arial", 20), DivisioneButt = DivisioneButt + 1 )
     text_output.grid(row=1, column=3, sticky="w")
 
 def Potenza():
     
-    text=" + "
-    text_output=tk.Label(window, text=text, fg="#000000", font=("Arial", 16))
+    text=" potenza "
+    text_output=tk.Label(window, text=text, fg="#000000", font=("Arial", 20))
     text_output.grid(row=1, column=0, sticky="w")
 
 def Radice():
     
-    text=" - "
-    text_output=tk.Label(window, text=text, fg="#000000", font=("Arial", 16))
+    text=" radice "
+    text_output=tk.Label(window, text=text, fg="#000000", font=("Arial", 20))
     text_output.grid(row=1, column=0, sticky="w")
 
 def InputNumero1():
